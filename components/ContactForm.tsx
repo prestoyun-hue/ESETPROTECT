@@ -43,7 +43,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ selectedSolution }) => {
     setStatus('submitting');
 
     // Google Apps Script 배포 URL
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbydI-WPTq7KTmlrojny9872GrCshmoZdNAgCTSWxkmymIiQsnlg7-ikpjlAri5ItMw9/exec"; 
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxGZZgxUM2JL4xVor8GpI0MFF2-bSp886cGO9hmBL8Wx6APieBp15ykhTFddc3RnyW1/exec"; 
 
     try {
       // Google Apps Script Web App으로 데이터 전송
