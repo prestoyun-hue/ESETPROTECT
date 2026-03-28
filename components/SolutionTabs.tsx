@@ -7,7 +7,15 @@ interface SolutionTabsProps {
 }
 
 const SolutionTabs: React.FC<SolutionTabsProps> = ({ onInquiry }) => {
-  const [activeTab, setActiveTab] = useState(solutions[0].id);
+  const [activeTab, setActiveTab] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    const solutionParam = params.get('solution');
+    if (solutionParam) {
+      const found = solutions.find(s => s.id.toLowerCase() === solutionParam.toLowerCase());
+      if (found) return found.id;
+    }
+    return solutions[0].id;
+  });
 
   const activeSolution = solutions.find(s => s.id === activeTab) || solutions[0];
 
@@ -27,6 +35,7 @@ const SolutionTabs: React.FC<SolutionTabsProps> = ({ onInquiry }) => {
     FEATURES.ENCRYPTION,
     FEATURES.SANDBOX,
     FEATURES.RANSOMWARE,
+    FEATURES.CLOUD_WORKLOAD,
     FEATURES.MAIL,
     FEATURES.CLOUD_APP,
     FEATURES.VULNERABILITY,
