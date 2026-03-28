@@ -12,6 +12,7 @@ export const FEATURES = {
   XDR: 'XDR (위협 탐지 및 대응)',
   RANSOMWARE: '랜섬웨어 복구 (Ransomware Remediation)',
   VULNERABILITY: '취약점 관리 및 패치 관리',
+  CLOUD_WORKLOAD: '클라우드 워크로드 보호 (Cloud Workload Protection)',
   MDR: 'MDR (보안 관제 서비스)'
 };
 
@@ -41,7 +42,8 @@ export const solutions: Solution[] = [
       FEATURES.SERVER,
       FEATURES.ENCRYPTION,
       FEATURES.SANDBOX,
-      FEATURES.RANSOMWARE
+      FEATURES.RANSOMWARE,
+      FEATURES.CLOUD_WORKLOAD
     ],
     color: 'bg-blue-50 border-blue-200'
   },
@@ -58,6 +60,7 @@ export const solutions: Solution[] = [
       FEATURES.ENCRYPTION,
       FEATURES.SANDBOX,
       FEATURES.RANSOMWARE,
+      FEATURES.CLOUD_WORKLOAD,
       FEATURES.MAIL,
       FEATURES.CLOUD_APP,
       FEATURES.VULNERABILITY
@@ -77,6 +80,7 @@ export const solutions: Solution[] = [
       FEATURES.ENCRYPTION,
       FEATURES.SANDBOX,
       FEATURES.RANSOMWARE,
+      FEATURES.CLOUD_WORKLOAD,
       FEATURES.MAIL,
       FEATURES.CLOUD_APP,
       FEATURES.XDR,
@@ -97,6 +101,7 @@ export const solutions: Solution[] = [
       FEATURES.ENCRYPTION,
       FEATURES.SANDBOX,
       FEATURES.RANSOMWARE,
+      FEATURES.CLOUD_WORKLOAD,
       FEATURES.MAIL,
       FEATURES.CLOUD_APP,
       FEATURES.XDR,
